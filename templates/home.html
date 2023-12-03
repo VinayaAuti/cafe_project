@@ -1,0 +1,340 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'main' %}
+
+
+<div class="row mt-3">
+    <div class="col-md-3 bg-warning text-dark">
+        <h5>Filter By Category</h5>
+        <hr>
+        <p><a class="anchor" href="/menu"><strong>Coffee</strong></a></p>
+        <p><a class="anchor"  href="/menu"><strong>Mocktail</strong></a></p>
+        <h5> Filter By Price Range</h5>
+        <div class="mb-3">  
+            <label for="input1" class="form-label">Min Value:</label>
+            <input type="number" class="form-control" id="input1" placeholder="Min value">
+        </div><!--Min value-->
+        <div class="mb-3">
+            <label for="input2" class="form-label">Mix Value:</label>
+            <input type="number" class="form-control" id="input2" placeholder="Max value">
+        </div><!--Max value-->
+        <div class="mb-3">
+            <input type="Submit" class="btn btn-success" value="submit" placeholder="Submit">
+        </div>
+            <h5>Sort By Price</h5>
+            <hr>
+            <p><a class="anchor" href="#">Low to High</a></p>
+            <p><a class="anchor" href="#">High to Low</a></p>
+    </div>    <!--filter side bas ends-->
+        <!--About start-->
+        
+        <div class="container col-md-8">
+                <div class="row">
+                    <img src="{% static 'asset/images/side/side3.jpeg' %}">
+                  <section id="about" class="about">
+                    <div class="row">
+                  <div class="col-md-4 mt-4 align-self-start" >
+                    <p style="font-style:italic; font-family:sans-serif;"><h2><a href="/home">About</a></h2></p>
+                  </div>
+                  <div class="col-md-4 mt-3">
+                    <h4> Coffee BrewDay, coffee shop, or café is an establishment that primarily serves various types of coffee, espresso, latte, and cappuccino. </h4>
+                  </div>
+                  <div class="col-md-4 mt-3">
+                    <h4>Some Coffee BrewDay may serve cold drinks, such as iced coffee and iced tea, as well as other non-caffeinated beverages.</h4>
+                  </div>
+                  </div>  
+                  </section>
+
+                </div>
+        </div>
+     
+         <!--about end-->       
+        
+    </div><!--filter side bas ends-->
+    <br><br>
+  <!-- Menu section start-->
+  <section id="menu" class="menu">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+      <div class="section-header text-center btn-success">
+        <h2>Our Menu</h2>
+        <p>Check Our <span>Yummy Menu</span></p>
+      </div>
+
+      <ul class="nav nav-tabs d-flex justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" role="tablist">
+
+        <li class="nav-item" role="presentation">
+          <a class="nav-link show active" data-bs-toggle="tab" data-bs-target="#menu-hotbrew" aria-selected="true" role="tab">
+            <h4>Hot Brew</h4>
+          </a>
+        </li><!-- End tab nav item -->
+
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-mocktail" aria-selected="false" role="tab" tabindex="-1">
+            <h4>Mocktail</h4>
+          </a><!-- End tab nav item -->
+
+        </li><li class="nav-item" role="presentation">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-smoothie" aria-selected="false" role="tab" tabindex="-1">
+            <h4>Smoothie</h4>
+          </a>
+        </li><!-- End tab nav item -->
+
+        
+      </ul>
+      <br>
+      <div class="tab-content aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+
+        <div class="tab-pane fade active show" id="menu-hotbrew" role="tabpanel">
+
+          <div class="tab-header text-center">
+            <p>Menu</p>
+            <h3>Starters</h3>
+          </div>
+
+          <div class="row gy-5">
+
+            <div class="col-lg-4 menu-item">
+              <a href="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+              <h4>Nescafe</h4>
+              <p class="price">
+                Rs.50
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+              <h4>Expresso shot</h4>
+              <p class="price">
+              Rs.60
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+              <h4>Cappuccino</h4>
+            
+              <p class="price">
+                Rs.70 
+              </p>
+            </div><!-- Menu Item -->
+
+          </div>
+        </div><!-- End hot brew Menu Content -->
+
+        <div class="tab-pane fade" id="menu-mocktail" role="tabpanel">
+
+          <div class="tab-header text-center">
+            <p>Menu</p>
+            <h3>Mocktail</h3>
+          </div>
+
+          <div class="row gy-5">
+
+            <div class="col-lg-4 menu-item">
+              <a href="{% static 'asset\images\gallary\mocktail.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\mocktail.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+              <h4>mint mojito</h4>
+              <p class="price">
+              Rs.99
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="{% static 'asset\images\gallary\mocktail1.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\mocktail1.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+              <h4>Blue blossom</h4>
+              <p class="price">
+              Rs.99
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="{% static 'asset\images\gallary\mocktail.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\mocktail.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+              <h4>Green apple glory</h4>
+              <p class="price">
+              Rs.99
+              </p>
+            </div><!-- Menu Item -->
+
+            
+
+          </div>
+        </div><!-- End mocktail Menu Content -->
+
+        <div class="tab-pane fade" id="menu-smoothie" role="tabpanel">
+
+          <div class="tab-header text-center">
+            <p>Menu</p>
+            <h3>Smoothie</h3>
+          </div>
+
+          <div class="row gy-5">
+
+            <div class="col-lg-4 menu-item">
+              <a href="{% static 'asset\images\gallary\smoothie1.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\smoothie1.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+              <h4>Stwaberry Smoothie</h4>
+              <p class="price">
+                Rs.109
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="{% static 'asset\images\gallary\smoothie2.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\smoothie2.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+              <h4>Oreo Smoothie</h4>
+              <p class="price">
+              Rs.109
+              </p>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-4 menu-item">
+              <a href="{% static 'asset\images\gallary\smoothie3.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\smoothie3.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+              <h4>Chocolate Smoothie</h4>
+            
+              <p class="price">
+                Rs.109 
+              </p>
+            </div><!-- Menu Item -->
+
+          </div>
+        </div><!-- End smoothie Menu Content -->
+
+      </div>
+
+    </div>
+  </section>
+  <!--menu section end--> 
+   
+    </div><!---Product section ends-->
+</div> <!---Product and filter section ends-->
+<hr>
+<!--photo gallary-->
+<section id="gallery" class="gallery">
+    <div class="container-fluid">
+      <div class="section-title text-center">
+        <h2>Some photos from <span>Our Cafe</span></h2>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4 mt-4">
+
+
+          <div class="gallery" style="width: 70%;">
+            <a href="{% static 'asset/images/gallary/gallary1.jpeg' %}"><img src="{% static 'asset/images/gallary/gallary1.jpeg' %}" height=" 200px" width="100%"></a>  
+          </div>  
+        </div>
+
+        <div class="col-md-4 mt-4">
+          <div class="gallery" style="width: 70%;">
+            <a href="{% static 'asset/images/gallary/smoothie1.jpeg' %}"><img src="{% static 'asset/images/gallary/smoothie1.jpeg' %}" height="200px" width="100%"></a>  
+          </div>  
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="gallery" style="width: 70%;">
+            <a href="{% static 'asset/images/gallary/smoothie2.jpeg' %}"><img src="{% static 'asset/images/gallary/smoothie2.jpeg' %}" height="200px" width="100%"></a>  
+          </div>  
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="gallery" style="width: 70%;">
+            <a href="{% static 'asset/images/gallary/smoothie3.jpeg' %}"><img src="{% static 'asset/images/gallary/smoothie3.jpeg' %}" height="200px" width="100%"></a>  
+          </div>  
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="gallery" style="width: 70%;">
+            <a href="{% static 'asset/images/gallary/gallary2.jpeg' %}"><img src="{% static 'asset/images/gallary/gallary2.jpeg' %}" height="200px" width="100%"></a>  
+          </div>  
+        </div>
+          <div class="col-md-3 mt-4">
+            <div class="gallery" style="width: 70%;">
+            <a href="{% static 'asset/images/gallary/gallary3.jpeg' %}"><img src="{% static 'asset/images/gallary/gallary3.jpeg' %}" height="200px" width="100%"></a>  
+          </div>
+          </div>
+          <div class="col-md-3 mt-4">
+            <div class="gallery" style="width: 80%;">
+            <a href="{% static 'asset/images/gallary/gallary4.jpeg' %}"><img src="{% static 'asset/images/gallary/gallary4.jpeg' %}" height="200px" width="100%"></a>  
+          </div>
+          </div>
+          <div class="col-md-3 mt-4">
+            <a href="{% static 'asset/images/gallary/gallary5.jpeg' %}"><img src="{% static 'asset/images/gallary/gallary5.jpeg' %}" height="200px" width="100%"></a>  
+          </div>
+          <div class="col-md-3 mt-4">
+            <a href="{% static 'asset/images/gallary/gallary6.jpeg' %}"><img src="{% static 'asset/images/gallary/gallary6.jpeg' %}" height="200px" width="100%"></a>  
+          </div>
+          <div class="col-md-3 mt-4">
+            <a href="{% static 'asset/images/gallary/gallary8.jpeg' %}"><img src="{% static 'asset/images/gallary/gallary8.jpeg' %}" height="200px" width="100%"></a>  
+          </div>  
+
+
+        </div>
+
+
+      </div>
+
+      </div>
+    </div>
+    
+  </section>
+  <!--end photo gallary-->
+
+<br>
+<br>
+<!-- ======= Book A Table Section ======= -->
+<section id="book_table" class="book_table">
+<div class="container aos-init aos-animate" data-aos="fade-up">
+
+<div class="section-header text-center">
+<h2>Book A Table</h2>
+<p>Book <span>Your Stay</span> With Us</p>
+</div>
+
+<div class="row g-0">
+
+<div class="col-lg- reservation-img aos-init aos-animate align-items-center"></div> 
+<a href="{% static 'asset\images\side1.jpeg' %}"><img src="{% static 'asset\images\side1.jpeg' %}" height="400px" width="100%"></a>
+<br>
+<div class="col-lg-8 d-flex text-center">
+     
+    <form action="/book_table" method="post" role="form" data-aos="fade-up" data-aos-delay="100">
+        
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <div class="validate"></div>
+            </div>
+        </div>
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+        <div class="validate">
+        </div>
+      </div>
+      <div class="mb-3">
+          <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Book a Table</button></div>
+      </form>
+</div><!-- End Reservation Form -->
+</div>
+</div>
+</section>
+<!-- end book-table section-->
+
+{% endblock %}

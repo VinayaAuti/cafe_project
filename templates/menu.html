@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'main' %}
+
+
+ <!-- Menu section start-->
+ <section id="menu" class="menu">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+      <div class="section-header text-center btn-success">
+        <h2>Our Menu</h2>
+        <p>Check Our <span>Yummy Menu</span></p>
+      </div>
+
+      <ul class="nav nav-tabs d-flex justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" role="tablist">
+
+        <li class="nav-item" role="presentation">
+          <a class="nav-link show active" data-bs-toggle="tab" data-bs-target="#menu-hotbrew" aria-selected="true" role="tab">
+            <h4>Hot Brew</h4>
+          </a>
+        </li><!-- End tab nav item -->
+
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-mocktail" aria-selected="false" role="tab" tabindex="-1">
+            <h4>Mocktail</h4>
+          </a><!-- End tab nav item -->
+
+        </li><li class="nav-item" role="presentation">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-smoothie" aria-selected="false" role="tab" tabindex="-1">
+            <h4>Smoothie</h4>
+          </a>
+        </li><!-- End tab nav item -->
+
+        
+      </ul>
+<br>
+<div class="tab-content aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+
+  <div class="tab-pane fade active show" id="menu-hotbrew" role="tabpanel">
+
+    <div class="tab-header text-center">
+      <p>Menu</p>
+      <h3>Starters</h3>
+    </div>
+
+    <div class="row gy-5">
+
+      <div class="col-lg-4 menu-item">
+        <a href="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+        <h4>Nescafe</h4>
+        <p class="price">
+          Rs.50
+        </p>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-4 menu-item">
+        <a href="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+        <h4>Expresso shot</h4>
+        <p class="price">
+        Rs.60
+        </p>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-4 menu-item">
+        <a href="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\coffee1.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+        <h4>Cappuccino</h4>
+      
+        <p class="price">
+          Rs.70 
+        </p>
+      </div><!-- Menu Item -->
+
+    </div>
+  </div><!-- End hot brew Menu Content -->
+
+  <div class="tab-pane fade" id="menu-mocktail" role="tabpanel">
+
+    <div class="tab-header text-center">
+      <p>Menu</p>
+      <h3>Mocktail</h3>
+    </div>
+
+    <div class="row gy-5">
+
+      <div class="col-lg-4 menu-item">
+        <a href="{% static 'asset\images\gallary\mocktail.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\mocktail.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+        <h4>mint mojito</h4>
+        <p class="price">
+        Rs.99
+        </p>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-4 menu-item">
+        <a href="{% static 'asset\images\gallary\mocktail1.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\mocktail1.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+        <h4>Blue blossom</h4>
+        <p class="price">
+        Rs.99
+        </p>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-4 menu-item">
+        <a href="{% static 'asset\images\gallary\mocktail.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\mocktail.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+        <h4>Green apple glory</h4>
+        <p class="price">
+        Rs.99
+        </p>
+      </div><!-- Menu Item -->
+
+      
+
+    </div>
+  </div><!-- End mocktail Menu Content -->
+
+  <div class="tab-pane fade" id="menu-smoothie" role="tabpanel">
+
+    <div class="tab-header text-center">
+      <p>Menu</p>
+      <h3>Smoothie</h3>
+    </div>
+
+    <div class="row gy-5">
+
+      <div class="col-lg-4 menu-item">
+        <a href="{% static 'asset\images\gallary\smoothie1.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\smoothie1.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+        <h4>Stwaberry Smoothie</h4>
+        <p class="price">
+          Rs.109
+        </p>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-4 menu-item">
+        <a href="{% static 'asset\images\gallary\smoothie2.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\smoothie2.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+        <h4>Oreo Smoothie</h4>
+        <p class="price">
+        Rs.109
+        </p>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-4 menu-item">
+        <a href="{% static 'asset\images\gallary\smoothie3.jpeg' %}" class="glightbox"><img src="{% static 'asset\images\gallary\smoothie3.jpeg' %}" class="menu-img img-fluid" alt=""></a>
+        <h4>Chocolate Smoothie</h4>
+      
+        <p class="price">
+          Rs.109 
+        </p>
+      </div><!-- Menu Item -->
+
+    </div>
+  </div><!-- End smoothie Menu Content -->
+
+</div>
+
+</div>
+</section>
+<!--menu section end--> 
+
+{% endblock %}

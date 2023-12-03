@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'main' %}
+
+<!--About start-->
+        
+<div class="container col-md-8">
+    <div class="row">
+        <img src="{% static 'asset/images/side/side3.jpeg' %}">
+      <section id="about" class="about">
+        <div class="row">
+           
+                <div class="col-md-4 mt-4 align-self-start" >
+                    <p style="font-style:italic; font-family:sans-serif;"><h2><a href="/about" class="text-decoration:none">About</a></h2></p>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <h4> Coffee BrewDay, coffee shop, or café is an establishment that primarily serves various types of coffee, espresso, latte, and cappuccino. </h4>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <h4>Some Coffee BrewDay may serve cold drinks, such as iced coffee and iced tea, as well as other non-caffeinated beverages.</h4>
+                </div>
+            </div>    
+      </div>  
+      </section>
+
+    </div>
+</div>
+
+<!--about end-->       
+
+
+{% endblock %}

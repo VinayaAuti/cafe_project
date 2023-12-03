@@ -1,0 +1,37 @@
+.anchor{
+    text-decoration: none;
+}
+
+.h2 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #5f5950;
+    text-align: center;
+}
+
+element.style {
+}
+section {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+h1, h3, h4, h5, h6 {
+    font-family: "Satisfy", sans-serif;
+}
+
+.section-menu {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.menu .nav-link h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    font-family: var(--font-secondary);
+}
